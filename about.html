@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>강서 클럽 비교 | 강서구 클럽 정보 총정리</title>
+    <meta name="description" content="지금 바로 강서 클럽 비교! 클럽 춤킹, 헌터스, 베이스먼트까지. 강서구 클럽의 별점, 분위기, 음악 정보를 한눈에. 010-6279-0862 문의.">
+    <meta name="keywords" content="강서 클럽, 강서구 클럽, 클럽 비교, 강서 클럽 추천, 클럽 춤킹, 헌터스, 베이스먼트">
+    <link rel="canonical" href="https://t3b04-gs-club-cmp-2.vercel.app/">
+    <meta property="og:title" content="강서 클럽 비교 | 강서구 클럽 정보 총정리">
+    <meta property="og:description" content="지금 바로 강서 클럽 비교! 클럽 춤킹, 헌터스, 베이스먼트까지. 강서구 클럽의 별점, 분위기, 음악 정보를 한눈에.">
+    <meta property="og:url" content="https://t3b04-gs-club-cmp-2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="강서 클럽 비교 | 강서구 클럽 정보 총정리">
+    <meta name="twitter:description" content="지금 바로 강서 클럽 비교! 클럽 춤킹, 헌터스, 베이스먼트까지. 강서구 클럽의 별점, 분위기, 음악 정보를 한눈에.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "강서 클럽 비교",
+        "description": "강서구 클럽 비교 정보 제공 사이트. 클럽 춤킹, 헌터스, 베이스먼트 등 인기 클럽 정보.",
+        "url": "https://t3b04-gs-club-cmp-2.vercel.app/",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "강서구",
+            "addressCountry": "KR"
+        },
+        "areaServed": "서울 강서구",
+        "priceRange": "₩₩"
+    }
+    </script>
+    <style>
+        /* RESET */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, 'Liberation Mono', monospace;
+            font-size: 16px;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            word-break: break-word;
+            padding: 0 24px;
+            margin: 0;
+            min-height: 100vh;
+            border: 4px solid #ffff00;
+            border-top: none;
+            border-bottom: none;
+        }
+        a { color: #00ff41; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #ffff00; background: #00ff41; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul, ol { list-style: none; padding-left: 0; }
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
+        h1 { font-size: clamp(3.5rem, 10vw, 6rem); line-height: 0.9; margin: 0 -8px 16px -8px; }
+        h2 { font-size: 2.5rem; margin: 0 0 24px 0; }
+        h3 { font-size: 1.8rem; }
+        p { margin-bottom: 16px; max-width: 65ch; }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px 0;
+        }
+
+        /* HEADER & NAV */
+        header {
+            border-bottom: 4px solid #ffff00;
+            padding: 24px 0 16px 0;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            background: #ffff00;
+            color: #111111;
+            padding: 8px 16px;
+            border: 4px solid #ffff00;
+            transform: rotate(-1deg);
+            display: inline-block;
+            letter-spacing: -1px;
+        }
+        .logo a { color: #111; text-decoration: none; }
+        .logo a:hover { background: transparent; color: #00ff41; }
+
+        /* NAV */
+        nav ul {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        nav ul li a {
+            display: block;
+            padding: 8px 16px;
+            border: 3px solid #ffff00;
+            background: #111111;
+            color: #ffff00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.1s linear;
+        }
+        nav ul li a:hover {
+            background: #ffff00;
+            color: #111111;
+            transform: scale(0.95);
+        }
+        .nav-phone {
+            border: 3px solid #00ff41 !important;
+            color: #00ff41 !important;
+        }
+        .nav-phone:hover {
+            background: #00ff41 !important;
+            color: #111 !important;
+        }
+
+        /* HAMBURGER (mobile) */
+        .hamburger { display: none; flex-direction: column; gap: 6px; background: none; border: 3px solid #ffff00; padding: 10px 12px; cursor: pointer; }
+        .hamburger span { display: block; width: 30px; height: 4px; background: #ffff00; }
+        .nav-mobile { display: none; }
+
+        @media (max-width: 768px) {
+            body { padding: 0 16px; border-width: 3px; }
+            header { padding-top: 16px; }
+            .hamburger { display: flex; }
+            nav ul { display: none; }
+            .nav-mobile.active { display: block; width: 100%; margin-top: 16px; }
+            .nav-mobile ul { flex-direction: column; gap: 8px; }
+            .nav-mobile ul li a { width: 100%; text-align: center; }
+            .header-inner { align-items: flex-start; }
+        }
+
+        /* HERO */
+        .hero {
+            background: #111111;
+            border: 4px solid #ffff00;
+            padding: 40px 24px;
+            margin: 0 -24px 40px -24px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            align-items: center;
+        }
+        .hero::before {
+            content: '';
+
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 200px; height: 200px;
+            background: repeating-linear-gradient(45deg, #00ff41 0px, #00ff41 6px, transparent 6px, transparent 12px);
+            opacity: 0.15;
+            transform: rotate(10deg);
+            z-index: 0;
+        }
+        .hero-text {
+            flex: 1 1 300px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-text h1 {
+            background: #ffff00;
+            color: #111111;
+            display: inline-block;
+            padding: 4px 16px;
+            transform: rotate(-2deg);
+            margin-bottom: 16px;
+        }
+        .hero-text p {
+            font-size: 1.4rem;
+            color: #ffff00;
+            border-left: 6px solid #00ff41;
+            padding-left: 16px;
+            font-weight: 700;
+        }
+        .hero-cta {
+            flex: 0 1 auto;
+            z-index: 1;
+            text-align: center;
+        }
+        .hero-cta .big-phone {
+            display: inline-block;
+            background: #00ff41;
+            color: #111111;
+            font-size: 2.2rem;
+            font-weight: 900;
+            padding: 16px 32px;
+            border: 4px solid #ffff00;
+            transform: rotate(1deg);
+            text-decoration: none;
+        }
+        .hero-cta .big-phone:hover { background: #ffff00; transform: rotate(-2deg); }
+        .hero-emoji {
+            font-size: 4rem;
+            display: block;
+            margin-top: 8px;
+            transform: rotate(3deg);
+        }
+
+        /* SECTION */
+        section {
+            padding: 24px 0;
+            margin-bottom: 40px;
+            border-top: 4px solid #ffff00;
+            border-bottom: 4px solid #ffff00;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            background: #ffff00;
+            color: #111111;
+            display: inline-block;
+            padding: 4px 24px;
+            transform: skewX(-6deg);
+            margin-bottom: 32px;
+        }
+
+        /* CLUB LIST (asymmetric blocks) */
+        .club-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 0 -8px;
+        }
+        .club-card {
+            background: #111111;
+            border: 4px solid #ffff00;
+            padding: 24px;
+            position: relative;
+            transform: rotate(var(--rot, 0deg));
+            transition: 0.15s;
+        }
+        .club-card:nth-child(odd) { --rot: -1deg; }
+        .club-card:nth-child(even) { --rot: 1.5deg; }
+        .club-card:hover { transform: rotate(0deg) scale(0.98); border-color: #00ff41; }
+        .club-card h3 {
+            font-size: 2rem;
+            background: #00ff41;
+            color: #111;
+            display: inline-block;
+            padding: 0 12px;
+            transform: skewX(-4deg);
+            margin-bottom: 12px;
+        }
+        .club-stars {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            color: #ffff00;
+            margin: 8px 0;
+        }
+        .club-stars .empty { opacity: 0.3; }
+        .club-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .club-features span {
+            border: 2px solid #00ff41;
+            padding: 2px 10px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            background: #111;
+        }
+        .club-desc {
+            color: #ffff00;
+            font-size: 0.9rem;
+            border-left: 4px solid #ffff00;
+            padding-left: 12px;
+        }
+
+        /* REVIEWS */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .review-card {
+            background: #111111;
+            border: 4px solid #00ff41;
+            padding: 24px;
+            transform: rotate(var(--r, 0deg));
+        }
+        .review-card:nth-child(2) { --r: 1deg; }
+        .review-card:nth-child(4) { --r: -1.5deg; }
+        .review-card:hover { border-color: #ffff00; }
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #ffff00;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .review-meta .nick { color: #00ff41; }
+        .review-meta .date { color: #ffff00; font-size: 0.8rem; }
+        .review-stars {
+            color: #ffff00;
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+        .review-text {
+            color: #ffff00;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #ffff00;
+            padding: 24px 0 40px 0;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px;
+            font-size: 0.9rem;
+        }
+        footer .copy {
+            color: #ffff00;
+        }
+        footer a {
+            color: #00ff41;
+        }
+
+        /* UTILITY */
+        .text-accent { color: #00ff41; }
+        .text-secondary { color: #ffff00; }
+        .bg-accent { background: #00ff41; color: #111; }
+        .bg-secondary { background: #ffff00; color: #111; }
+        .border-all { border: 4px solid #ffff00; }
+        .gap-16 { gap: 16px; }
+        .mt-40 { margin-top: 40px; }
+        .mb-40 { margin-bottom: 40px; }
+
+        /* responsive tweaks */
+        @media (max-width: 480px) {
+            h1 { font-size: 2.8rem; }
+            .hero { padding: 24px 16px; margin-left: -16px; margin-right: -16px; }
+            .hero-text p { font-size: 1rem; }
+            .hero-cta .big-phone { font-size: 1.6rem; padding: 12px 20px; }
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="/">강서클럽비교</a>
+                </div>
+                <nav>
+                    <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul>
+                        <li><a href="#clubs">클럽</a></li>
+                        <li><a href="#reviews">생생후기</a></li>
+                        <li><a href="tel:01062790862" class="nav-phone">📞 전화</a></li>
+                    </ul>
+                    <div class="nav-mobile" id="navMobile">
+                        <ul>
+                            <li><a href="#clubs">클럽</a></li>
+                            <li><a href="#reviews">생생후기</a></li>
+                            <li><a href="tel:01062790862" class="nav-phone">📞 전화</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="hero" style="border-top: none; margin-top: 0;">
+                <div class="hero-text">
+                    <h1>강서 클럽<br>비교 끝판왕</h1>
+                    <p>야, 오늘 밤 어디 갈까?<br>강서구 클럽 총정리! 춤킹, 헌터스, 베이스먼트까지 다 모았다.</p>
+                    <span class="hero-emoji">🎧🕺🔥</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="tel:01062790862" class="big-phone">📞 010-6279-0862</a>
+                    <span style="display:block; margin-top:12px; font-size:1.2rem; color:#00ff41;">> 지금 전화해서 물어봐</span>
+                </div>
+            </section>
+
+            <!-- CLUBS -->
+            <section id="clubs" style="border-top: 4px solid #ffff00;">
+                <h2 class="section-title">🔥 강서 클럽 3</h2>
+                <div class="club-grid">
+                    <div class="club-card">
+                        <h3>클럽 춤킹</h3>
+                        <div class="club-stars">★★★★<span class="empty">★</span></div>
+                        <div class="club-features">
+                            <span>EDM</span><span>힙합</span><span>라운지</span>
+                        </div>
+                        <p class="club-desc">강서 대표 EDM 성지. 주말엔 웨이팅 기본. 사운드 시스템 미쳤다는 후기 많아. 별점 4.2 / 5</p>
+                    </div>
+                    <div class="club-card">
+                        <h3>헌터스</h3>
+                        <div class="club-stars">★★★★★</div>
+                        <div class="club-features">
+                            <span>힙합</span><span>R&amp;B</span><span>언더그라운드</span>
+                        </div>
+                        <p class="club-desc">형들 여기 진짜 레전드야. 분위기 미쳤고 사람들도 착해. 유일한 단점은 문을 못 찾겠다는 것. 별점 4.8 / 5</p>
+                    </div>
+                    <div class="club-card">
+                        <h3>베이스먼트</h3>
+                        <div class="club-stars">★★★<span class="empty">★★</span></div>
+                        <div class="club-features">
+                            <span>테크노</span><span>인디</span><span>칵테일</span>
+                        </div>
+                        <p class="club-desc">지하 감성 제대로. 조용히 술 마시면서 음악 듣기 좋아. 근데 춤추긴 좁다는 의견. 별점 3.5 / 5</p>
+                    </div>
+                </div>
+                <div style="margin-top: 24px; padding: 16px; border: 4px solid #00ff41; background: #111; text-align: center;">
+                    <p style="font-size:1.4rem; font-weight:700; color:#00ff41;">👑 내 취향에 맞는 클럽은? 전화로 물어보셈 010-6279-0862</p>
+                </div>
+            </section>
+
+            <!-- REVIEWS UGC -->
+            <section id="reviews">
+                <h2 class="section-title" style="transform:skewX(4deg);">💬 생생 유저 후기</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="nick">🔥춤신춤왕</span>
+                            <span class="date">2025-02-14</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">“헌터스 갔다가 인생 클럽 찾음. 스피커 앞에 서니까 심장이 떨려. 강서 클럽 비교 제일 잘한 듯!”</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="nick">🍺맥주마니아</span>
+                            <span class="date">2025-01-28</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">“춤킹은 사람 너무 많아. 근데 에너지는 미쳤어. 별 하나 뺀 건 화장실 줄 때문에.”</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="nick">🕶️나이트사냥</span>
+                            <span class="date">2025-03-02</span>
+                        </div>
+                        <div class="review-stars">★★★☆☆</div>
+                        <p class="review-text">“베이스먼트 분위기는 좋은데 춤추긴 좀 좁아. 친구랑 수다떨기엔 딱임. 가격도 나쁘지 않음.”</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="nick">🦵댄서킹</span>
+                            <span class="date">2024-12-20</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">“강서에서 클럽 간다면 무조건 헌터스. 내가 가본 클럽 중에 분위기 원탑. DJ 짱!”</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="nick">✨초보클럽</span>
+                            <span class="date">2025-02-05</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">“친구 따라서 춤킹 처음 가봤는데 신세계. 근데 입장료 아깝진 않음. 다음엔 헌터스 도전!”</p>
+                    </div>
+                </div>
+                <div style="margin-top: 32px; border-top: 4px solid #ffff00; padding-top: 20px; text-align: center;">
+                    <p style="font-size: 1.6rem; font-weight: 900; color: #00ff41;">너의 후기도 남겨줘! 👇</p>
+                    <a href="tel:01062790862" style="font-size: 2rem; display: inline-block; border: 4px
+</body>
+</html>
